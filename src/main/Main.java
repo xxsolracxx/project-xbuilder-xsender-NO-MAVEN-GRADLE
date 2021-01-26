@@ -156,7 +156,7 @@ public class Main {
     	PrivateKey privateKey = certificate.getPrivateKey();
     	
     	//Firmar XML
-    	Document signedXML = XMLSigner.signXML(xml, "GRAMATEC-SA", x509Certificate, privateKey);
+    	Document signedXML = XMLSigner.signXML(xml, "TU-FIRMA", x509Certificate, privateKey);
     	return signedXML;
     }
 
